@@ -1,0 +1,27 @@
+---
+title: "10 Silver Coins"
+description: "Create two separate piles with the same number of silver coins."
+tags: ["coins", "math"]
+difficulty: 10 coins
+pubDate: May 26, 2024
+---
+import Hint from '../../components/Hint.astro';
+import Solution from '../../components/Solution.astro'
+
+In front of you is a pile of 100 coins. Each coin is silver on one side and gold on the other. The sides are visually distinguishable, but cannot be distinguished in any other way.
+Suddenly, the lights turn off, and you can no longer see the coins.
+You remember that 10 coins in the pile are on the silver side, and the other 90 are on the gold side, but you don't remember where the silver coins are located.
+
+How can you separate the coins into two piles, each containing the same number of silver-side-up coins (they can have different numbers of gold-side-up coins).
+
+<Hint>
+When you flip over a coin, what happens to the number of silver coins and gold coins?
+</Hint>
+
+<Solution>
+Pick 10 random coins and flip them over. This forms one pile. The other 90 coins form the other pile.
+This works because when you pick 10 coins, x of them are silver coins and 10-x are gold coins.
+In the other pile, 10-x coins are gold (you've removed x of the 10 gold ones).
+By flipping over the pile, you have 10-x silver coins and x gold coins, and the number of silver coins is equal in both piles.
+</Solution>
+

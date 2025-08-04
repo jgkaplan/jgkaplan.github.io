@@ -1,0 +1,29 @@
+---
+title: "Two Ropes and a Lighter"
+description: "Figure out how to measure 45 minutes."
+tags: ["logic"]
+difficulty: 2 ropes
+pubDate: August 4, 2025
+---
+import Hint from '../../components/Hint.astro';
+import Solution from '../../components/Solution.astro'
+
+You have two ropes of equal length and a lighter. If you light a rope from one of the ends, it will take exactly one hour to fully burn.
+However, the ropes burn unevenly. If half of a rope has burned, you don't know that half the time has passed (it might take, for example, 1 minute to burn 90% of the rope, and 59 minutes to burn the last 10%).
+
+How can you precisely measure out 45 mintues?
+
+<Hint>
+Can you figure out a way to measure 30 minutes?
+</Hint>
+
+<Solution>
+Note that if you start a rope burning at both ends, it will take exactly 30 minutes to burn through.
+
+Start the first rope burning at both ends, and the second rope burning at one end.
+After the first rope burns through, 30 minutes have passed, and there are 30 minutes remaining on the second rope.
+Light the second rope on the non-burning end. Now it will take only 15 minutes to finish burning.
+
+When the second rope finishes burning, 45 minutes have passed.
+</Solution>
+
